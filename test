@@ -1,0 +1,13 @@
+git clone https://github.com/plaid/quickstart.git
+cd quickstart/python
+pip install -r requirements.txt
+
+PLAID_CLIENT_ID=5e5e96e4d6e09e0012bc1877 \
+PLAID_SECRET=f8933684c84d859b6e90142e4184ad \
+PLAID_PUBLIC_KEY=4a8cd85dab1f13269e4b34e5c0ebd1 \
+PLAID_PRODUCTS=transactions \
+PLAID_COUNTRY_CODES=US,CA,GB,FR,ES \
+PLAID_ENV=sandbox \
+python server.py
+
+open http://localhost:5000
